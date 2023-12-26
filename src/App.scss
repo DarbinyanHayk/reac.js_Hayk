@@ -1,0 +1,61 @@
+body {
+  background-color: black;
+  .App {
+    width: 1140px;
+    margin: 0 auto;
+    padding: 1em;
+    .box {
+      background-color: white;
+      width: 50%;
+      margin: 0 auto;
+      padding: 1em;
+      box-shadow: 0px 3px 17px rgb(245, 245, 245);
+      border-radius: 15px;
+    }
+    .Quote {
+      box-shadow: 0px 3px 17px black;
+      background-color: black;
+      color: white;
+      width: 500px;
+      height: 150px;
+      margin: 0 auto;
+      border: 1px solid rgb(181, 176, 176);
+      padding: 1em;
+      border-radius: 15px;
+      position: relative;
+      &_id {
+        color: white;
+        background-color: red;
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 900;
+        border-radius: 50%;
+      }
+      &_Quote {
+        margin-top: 25px;
+      }
+      &_autor {
+        position: absolute;
+        top: 120px;
+        right: 5px;
+      }
+    }
+  }
+  .nextPrevious {
+    display: flex;
+    justify-content: space-around;
+    gap: 350px;
+    & > button {
+      padding: 0.6em;
+      border-radius: 15px;
+      margin-top: 15px;
+      cursor: pointer;
+    }
+  }
+}
